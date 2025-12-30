@@ -45,6 +45,11 @@ Architecture And Figures
 Detailed model specs, input formats, parameter counts, and diagrams:
 - docs/architecture.md
 
+Experiment History
+------------------
+Summarized analysis of the attempts and decisions in note.txt:
+- docs/note_analysis.md
+
 Labeling Strategy
 -----------------
 - ARRHYTHMIA: windows from MIT-BIH Arrhythmia that contain any non-normal beat
