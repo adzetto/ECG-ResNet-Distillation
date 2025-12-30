@@ -70,6 +70,10 @@ Download
 --------
     python scripts/download_physionet.py --datasets mitdb nsrdb ptbdb
 
+Prepackaged data (raw + processed) is available here:
+    https://drive.google.com/drive/folders/1vfI3gWR8zDvml_UJBe-B6ZRh_TwtOt_t?usp=sharing
+After downloading, place the `data/` folder at the repo root.
+
 Prepare data
 ------------
     python scripts/prepare_dataset.py --balance
