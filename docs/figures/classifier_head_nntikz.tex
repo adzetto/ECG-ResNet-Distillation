@@ -1,0 +1,42 @@
+% Derived from nntikz (MIT) for classifier head styling.
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{positioning,calc}
+
+\begin{document}
+\begin{tikzpicture}[
+    >=LaTeX,
+    node/.style={
+        circle,
+        minimum width=2.0em,
+        draw,
+        fill=gray!10,
+        thick
+    },
+    arrow/.style={
+        -latex,
+        thick
+    }
+]
+    % Feature vector (from GAP)
+    \foreach \x in {1,...,2}
+        \node (f\x) at (0, -\x*1.2) [node] {$z_\x$};
+    \node (fN) at (0, -4.2) [node] {$z_n$};
+    \path (f2) -- (fN) node[pos=0.5, scale=1.6] {\vdots};
+
+    % Output logits / probabilities
+    \node (o1) at (4.0, -1.2) [node] {$p_{N}$};
+    \node (o2) at (4.0, -2.4) [node] {$p_{MI}$};
+    \node (o3) at (4.0, -3.6) [node] {$p_{A}$};
+
+    % Dense connections (schematic)
+    \foreach \i in {1,2}
+        \foreach \j in {1,2,3}
+            \draw [arrow] (f\i) -- (o\j);
+    \foreach \j in {1,2,3}
+        \draw [arrow] (fN) -- (o\j);
+
+    \node[above=0.25cm of f1] {$\mathbf{z}$ (GAP features)};
+    \node[above=0.25cm of o1] {Softmax output};
+\end{tikzpicture}
+\end{document}

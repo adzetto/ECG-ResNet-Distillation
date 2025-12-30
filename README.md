@@ -40,6 +40,11 @@ Pipeline Summary
 3) Train a 1D CNN with patient-level splits
 4) Evaluate per-class accuracy on a held-out subject set
 
+Architecture And Figures
+------------------------
+Detailed model specs, input formats, parameter counts, and diagrams:
+- docs/architecture.md
+
 Labeling Strategy
 -----------------
 - ARRHYTHMIA: windows from MIT-BIH Arrhythmia that contain any non-normal beat
