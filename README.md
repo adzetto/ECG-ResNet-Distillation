@@ -1,3 +1,8 @@
+<!-- badges -->
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
+![last commit](https://img.shields.io/github/last-commit/adzetto/ECG-ResNet-Distillation?style=flat-square&color=informational) ![repo size](https://img.shields.io/github/repo-size/adzetto/ECG-ResNet-Distillation?style=flat-square&color=informational) ![top language](https://img.shields.io/github/languages/top/adzetto/ECG-ResNet-Distillation?style=flat-square) ![language count](https://img.shields.io/github/languages/count/adzetto/ECG-ResNet-Distillation?style=flat-square)
+
 ECG 3-Class Classifier (Single-Lead)
 ===================================
 
